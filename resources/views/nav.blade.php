@@ -10,7 +10,7 @@
     <div class="d-inline-flex align-center">
     <img class="logo" src="{{url('/images/djs-logo.png')}}">
     
-    <span>{{trans("lang.shop_name")}}</span>
+    {{trans("lang.shop_name")}}
     </div>
 
 </div>
