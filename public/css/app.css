@@ -220,7 +220,7 @@ img {
 .top-nav .logo {
     height: 46px;
     position: relative;
-    top: 10px;
+    /* top: 10px; */
     padding: 0 0px 0 0;
     background: #fff;
     margin: 0 10px;
