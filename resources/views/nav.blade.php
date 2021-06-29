@@ -7,7 +7,7 @@
 
 
 
-    <div class="d-inline-flex align-content-center">
+    <div class="d-inline-flex align-items-center logo-div">
     <img class="logo" src="{{url('/images/djs-logo.png')}}">
     
     {{trans("lang.shop_name")}}

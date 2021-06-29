@@ -808,6 +808,10 @@ img {
     left: -5px;
 }
 
+.logo-div {
+    height: 62px;
+}
+
 @media (max-width: 767px) {
     .djsfans-banner {
         display: none;
