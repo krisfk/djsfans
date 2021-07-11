@@ -23,11 +23,12 @@ class LoginController extends Controller
             if(Hash::check($password, $db_pw))
             {
                 $success['token'] =  $member->createToken('authToken')->accessToken;
-                // $success['member_code'] =  $member['member_code'];
-               
-            //    $request->session()->put('member_code',$member['member_code']);
+                $data['login_email']=$email;
+                $data['whatapps_number']=$password;
+                $data['full_name']=$member['full_name'];
 
-               return response()->json(['success' => $success],200);
+                
+               return response()->json(['success' => $success,'data'=>$data],200);
                 //   $accessToken=  Auth::guard('member')->user()->createToken('authToken')->accessToken;
                 //  return response(['member'=>Auth::guard('member')->user(),'access_token'=>$accessToken]);     
             }
