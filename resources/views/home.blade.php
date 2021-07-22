@@ -8,7 +8,7 @@
 @isset($member)
 
 <div class="loginned-blk">
-    <div class="greeting-div">hello ~ {{$member['full_name']}} {{$member['member_code']}} <a href="{{url('/logout')}}"
+    <div class="greeting-div">hello ~~ {{$member['full_name']}} {{$member['member_code']}} <a href="{{url('/logout')}}"
             class="logout-btn">登出</a>
     </div>
 
