@@ -814,7 +814,9 @@ img {
 
 .logo-div {
     height: 62px;
-    font-size: 17px;
+    font-size: 22px;
+    margin: 8px 0 0 0;
+    font-weight: bold;
 }
 
 @media (max-width: 767px) {
