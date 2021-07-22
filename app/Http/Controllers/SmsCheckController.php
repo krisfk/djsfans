@@ -10,6 +10,7 @@ use Illuminate\Support\Facades\Auth;
 
 
 
+
 class SmsCheckController extends Controller
 {
     public function index(Request $request)

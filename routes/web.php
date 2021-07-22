@@ -62,6 +62,7 @@ Route::get('test2',['uses' => 'PHPmailerController@get_token'] );
 
 Route::get('test3', ['uses'=>'TestController@index']);
 Route::get('test4', function () {return 999;    });
+Route::get('test5', function () {return 999;    });
 
 
 Route::get('qr-code-g', function () {
