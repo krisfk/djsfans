@@ -8,7 +8,7 @@
 
 
     <div class="d-table mx-auto align-items-center logo-div m-0">
-        <div class="d-table-cell">
+        <div class="d-table-cell align-middle">
     <img class="logo" src="{{url('/images/djs-logo.png')}}">
     
     {{trans("lang.shop_name")}}
