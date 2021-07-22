@@ -7,10 +7,12 @@
 
 
 
-    <div class="d-inline-flex align-items-center logo-div">
+    <div class="d-inline-table align-items-center logo-div">
+        <div class="d-table-cell">
     <img class="logo" src="{{url('/images/djs-logo.png')}}">
     
     {{trans("lang.shop_name")}}
+</div>
     </div>
 
 </div>
