@@ -468,6 +468,7 @@ img {
 
 .before-login-div ul {
     text-align: center;
+    padding: 0;
 }
 
 .before-login-div li {
@@ -520,8 +521,8 @@ img {
     text-align: center;
 }
 
-.login-form input[type=text],
-.login-form input[type=password] {
+.login-form input[type="text"],
+.login-form input[type="password"] {
     width: 100%;
     max-width: 420px;
     height: 58px;
@@ -567,7 +568,7 @@ img {
     text-indent: 11px;
 }
 
-.login-form .whatapps_number_div input[type=text].whatapps_number {
+.login-form .whatapps_number_div input[type="text"].whatapps_number {
     width: 98%;
     max-width: 293px;
     height: 58px;
@@ -578,10 +579,10 @@ img {
     background: #ffe7f3;
 }
 
-.login-form input[type=submit],
-.login-form input[type=reset],
-.admin-form input[type=submit],
-.admin-form input[type=button] {
+.login-form input[type="submit"],
+.login-form input[type="reset"],
+.admin-form input[type="submit"],
+.admin-form input[type="button"] {
     width: 30%;
     height: 50px;
     display: inline-block;
@@ -595,12 +596,12 @@ img {
     max-width: 180px;
 }
 
-.admin-form input[type=button] {
+.admin-form input[type="button"] {
     background: #000;
 }
 
-.admin-form input[type=submit],
-.admin-form input[type=button] {
+.admin-form input[type="submit"],
+.admin-form input[type="button"] {
     margin: 20px auto;
     display: inline-block;
     width: 40%;
@@ -858,7 +859,7 @@ img {
         padding: 0 2% 0 2%;
         -webkit-appearance: none;
     }
-    .login-form .whatapps_number_div input[type=text].whatapps_number {
+    .login-form .whatapps_number_div input[type="text"].whatapps_number {
         width: 98%;
         max-width: 293px;
         height: 58px;
@@ -868,8 +869,8 @@ img {
         border: 1px solid #d5418d;
         background: #ffe7f3;
     }
-    .login-form input[type=text],
-    .login-form input[type=password] {
+    .login-form input[type="text"],
+    .login-form input[type="password"] {
         width: 90%;
     }
 }
