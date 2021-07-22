@@ -7,7 +7,7 @@
 
 
 
-    <div class="d-table mx-auto align-items-center logo-div">
+    <div class="d-table mx-auto align-items-center logo-div m-0">
         <div class="d-table-cell">
     <img class="logo" src="{{url('/images/djs-logo.png')}}">
     
