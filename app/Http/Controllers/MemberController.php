@@ -62,6 +62,39 @@ class MemberController extends Controller
                 $member_records->remark = '新會員加入';
                 $member_records->save();
 
+                //save to mailchimp
+
+                $postData = array(
+                    "email_address" => $member->email,
+                    "status" => "subscribed",
+                    "merge_fields" => array(
+                    "FNAME"=> $member->full_name,
+                    "PHONE"=> $member->whatsapp_number
+                    )
+                );
+
+                $list_id = 'ea3e69d725';
+                $authToken = 'f06c656ac3d0450d4fdf8e634d06100f-us18';
+                
+                // Setup cURL
+                $ch = curl_init('https://us18.api.mailchimp.com/3.0/lists/'.$list_id.'/members/');
+
+                curl_setopt_array($ch, array(
+                    CURLOPT_CUSTOMREQUEST => "POST",
+                    CURLOPT_RETURNTRANSFER => TRUE,
+                    CURLOPT_HTTPHEADER => array(
+                        'Authorization: apikey '.$authToken,
+                        'Content-Type: application/json'
+                    ),
+                    CURLOPT_POSTFIELDS => json_encode($postData)
+                ));
+                // Send the request
+                $response = curl_exec($ch);
+                // print_r($response);
+                // #######################################################################
+
+
+
     
                 
                 $data['error']='no_error';
