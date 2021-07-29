@@ -9,7 +9,7 @@ use Mail;
 use App\Member;
 use App\Member_records;
 use Illuminate\Support\Facades\Auth;
-
+use Config;
 
 class MemberController extends Controller
 {
@@ -74,7 +74,8 @@ class MemberController extends Controller
                 );
 
                 $list_id = 'ea3e69d725';
-                $authToken = 'f06c656ac3d0450d4fdf8e634d06100f-us18';
+                $authToken = Config::get('constant.mailchimp_api_token');
+
                 
                 // Setup cURL
                 $ch = curl_init('https://us18.api.mailchimp.com/3.0/lists/'.$list_id.'/members/');
